@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BellGothicBlack';
+    src: url('fonts/BellGothicBlack.eot');
+    src: url('fonts/BellGothicBlack.eot') format('embedded-opentype'),
+         url('fonts/BellGothicBlack.woff2') format('woff2'),
+         url('fonts/BellGothicBlack.woff') format('woff'),
+         url('fonts/BellGothicBlack.ttf') format('truetype'),
+         url('fonts/BellGothicBlack.svg#BellGothicBlack') format('svg');
+}

@@ -1,0 +1,606 @@
+/*============    ШРИФТЫ    ===========*/
+@font-face {
+  font-family: 'BellGothicBlack';
+  src: url('fonts/BellGothicBlack.eot');
+  src: url('fonts/BellGothicBlack.eot') format('embedded-opentype'), url('fonts/BellGothicBlack.woff2') format('woff2'), url('fonts/BellGothicBlack.woff') format('woff'), url('fonts/BellGothicBlack.ttf') format('truetype'), url('fonts/BellGothicBlack.svg#BellGothicBlack') format('svg');
+}
+@font-face {
+  font-family: 'DIN_Medium';
+  src: url('fonts/DIN_Medium.eot');
+  src: url('fonts/DIN_Medium.eot') format('embedded-opentype'), url('fonts/DIN_Medium.woff2') format('woff2'), url('fonts/DIN_Medium.woff') format('woff'), url('fonts/DIN_Medium.ttf') format('truetype'), url('fonts/DIN_Medium.svg#DIN_Medium') format('svg');
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('fonts/ProximaNovaLight.eot');
+  src: url('fonts/ProximaNovaLight.eot') format('embedded-opentype'), url('fonts/ProximaNovaLight.woff2') format('woff2'), url('fonts/ProximaNovaLight.woff') format('woff'), url('fonts/ProximaNovaLight.ttf') format('truetype'), url('fonts/ProximaNovaLight.svg#ProximaNovaLight') format('svg');
+}
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+.bold {
+  font-family: "BellGothicBlack";
+}
+.med {
+  font-family: "DIN_Medium";
+}
+.lig {
+  font-family: "ProximaNovaLight";
+}
+/*============    Базовые настройки    ===========*/
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+.section_header h2 {
+  text-transform: uppercase;
+  color: #666;
+  font-family: "BellGothicBlack";
+}
+button:focus {
+  outline: none;
+}
+/*============    Шапка    ===========*/
+header {
+  padding-bottom: 20px;
+  color: #666;
+  padding-top: 25px;
+  width: 110px;
+}
+header .descript h4 {
+  font-family: "DIN_Medium";
+  text-transform: uppercase;
+}
+header .descript h5 {
+  font-size: 15px;
+}
+header .phone_number {
+  text-align: right;
+}
+header .phone_number h3 {
+  margin-top: 7px;
+}
+header .phone_number p {
+  font-family: "ProximaNovaLight";
+}
+header .phone_number a {
+  display: inline-block;
+  font-family: "DIN_Medium";
+  color: #666;
+}
+header .phone_number a:hover {
+  text-decoration: none;
+}
+header .phone_number a:before {
+  margin-right: 5px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url(../img/phone.png) no-repeat center center;
+  display: inline-block;
+}
+/*============    Навигация    ===========*/
+nav {
+  background-color: #fafdfa;
+  top: 110px;
+  /*высота шапки в пикселях*/
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+nav ul.list-inline a {
+  font-family: "ProximaNovaLight";
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  color: #666;
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+  -webkit-transition: all 0.1s 0.02s ease;
+}
+nav ul.list-inline a:hover {
+  text-decoration: none;
+  background-color: #67cc67;
+  color: #fff;
+}
+nav ul.list-inline {
+  margin-bottom: 0;
+}
+/*============    ГЛАВНЫЙ ЭКРАН    ===========*/
+section#main {
+  background: url(../img/headre2.jpg) no-repeat center center;
+  background-size: cover;
+}
+section#main .main_header h1 {
+  margin-top: 100px;
+  color: #fff;
+  font-family: "BellGothicBlack";
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+section#main .main_header span {
+  background-color: #67cc67;
+  padding: 5px;
+}
+section#main h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "BellGothicBlack";
+}
+section#main h3 span {
+  color: #ff9933;
+  border-bottom: 1px solid #ff9933;
+}
+section#main .main_buttons {
+  margin-bottom: 100px;
+  margin-top: 7px;
+}
+section#main .main_buttons button#measurer {
+  background-color: #ff9933;
+  border: none;
+  padding: 17px 35px;
+  color: #fff;
+  font-family: "BellGothicBlack";
+  text-transform: uppercase;
+  font-size: 20px;
+}
+section#main .main_buttons button#measurer:hover {
+  background-color: #d67513;
+}
+section#main .main_buttons button#get_types {
+  border: none;
+  background-color: transparent;
+  padding: 15px 33px;
+  color: #ff9933;
+  font-family: "BellGothicBlack";
+  text-transform: uppercase;
+  font-size: 20px;
+  border: 2px solid #ff9933;
+  margin-left: 20px;
+}
+section#main .main_buttons button#get_types:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+/*============    Вид Жалюзи    ===========*/
+section#types {
+  color: #666;
+  padding-top: 60px;
+}
+section#types .section_header {
+  margin-bottom: 50px;
+}
+section#types h4 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "DIN_Medium";
+  margin-top: 25px;
+}
+section#types button.more_buttom {
+  border: none;
+  color: #66cc66;
+  border: 2px solid #66cc66;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: "BellGothicBlack";
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+  -webkit-transition: all 0.1s 0.02s ease;
+}
+section#types button.more_buttom:hover {
+  background-color: #66cc66;
+  color: #fff;
+}
+section#types button.offer_btn {
+  border: none;
+  color: #fff;
+  border: 2px solid #66cc66;
+  padding: 10px 20px;
+  background-color: #66cc66;
+  text-transform: uppercase;
+  font-family: "BellGothicBlack";
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+  -webkit-transition: all 0.1s 0.02s ease;
+}
+section#types button.offer_btn:hover {
+  background-color: transparent;
+  color: #66cc66;
+}
+section#types .card {
+  padding: 5px;
+  border: 2px solid transparent;
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+  -webkit-transition: all 0.1s 0.02s ease;
+}
+section#types .card:hover {
+  border: 2px solid #d2e5d7;
+}
+/*============    Бесплатная консультация    ===========*/
+section#help {
+  padding-bottom: 50px;
+  padding-top: 65px;
+}
+section#help h3 {
+  color: #ff9933;
+  text-transform: uppercase;
+  font-family: "BellGothicBlack";
+}
+section#help p {
+  color: #666;
+  font-family: "ProximaNovaLight";
+  font-size: 17px;
+}
+section#help img {
+  margin-top: 25px;
+}
+section#help button#free_consult {
+  border: none;
+  background-color: transparent;
+  color: #ff9933;
+  border: 2px solid #ff9933;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  font-family: "BellGothicBlack";
+}
+section#help button#free_consult:hover {
+  background-color: #ff9933;
+  color: #fff;
+}
+/*============    Акция    ===========*/
+section#offer {
+  padding-top: 70px;
+}
+section#offer h4 {
+  text-transform: uppercase;
+  color: #ff9933;
+  font-family: "BellGothicBlack";
+}
+section#offer h3 {
+  text-transform: uppercase;
+  color: #ff9933;
+  font-family: "BellGothicBlack";
+}
+section#offer p {
+  font-family: "ProximaNovaLight";
+  color: #666;
+  font-size: 22px;
+}
+section#offer input[name="name"] {
+  background: url(../img/1.png) no-repeat center left 5px;
+  padding: 25px;
+  padding-left: 30px;
+  border-radius: 0;
+  border: solid 1px #ccc;
+  font-family: "ProximaNovaLight";
+  opacity: 0.5;
+}
+section#offer input[name="name"]:hover,
+section#offer input[name="name"]:focus {
+  opacity: 1;
+}
+section#offer input[name="phone"] {
+  background: url(../img/2.png) no-repeat center left 5px;
+  padding: 25px;
+  padding-left: 30px;
+  border-radius: 0;
+  border: solid 1px #ccc;
+  font-family: "ProximaNovaLight";
+  opacity: 0.5;
+}
+section#offer input[name="phone"]:hover,
+section#offer input[name="phone"]:focus {
+  opacity: 1;
+}
+section#offer button[type="submit"] {
+  background-color: #ff9933;
+  color: #fff;
+  border: 1px solid #ff9933;
+  padding: 14px 25px;
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+  -webkit-transition: all 0.1s 0.02s ease;
+}
+section#offer button[type="submit"]:hover {
+  background-color: #fff;
+  color: #ff9933;
+}
+/*============    Отзывы    ===========*/
+section#feedback {
+  padding-bottom: 50px;
+}
+section#feedback .section_header {
+  margin-bottom: 50px;
+}
+section#feedback .item {
+  height: 360px;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+section#feedback .item h5 {
+  margin-top: 15px;
+  font-family: "DIN_Medium";
+  color: #666;
+  font-size: 20px;
+}
+section#feedback .item a {
+  font-family: "DIN_Medium";
+  font-size: 18px;
+}
+section#feedback .item p {
+  margin-top: 30px;
+  font-family: "ProximaNovaLight";
+  font-size: 17px;
+}
+section#feedback .carousel-indicators {
+  buttons: -50px;
+}
+section#feedback .carousel-indicators .active {
+  background-color: #ff9933;
+}
+section#feedback .carousel-indicators li {
+  border: solid 1px #ff9933;
+}
+/*============    Контакты    ===========*/
+/*============    Футер    ===========*/
+footer {
+  margin-top: 20px;
+  background-color: #666;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  color: #fff;
+}
+footer h2 {
+  margin-left: -15px;
+  font-family: "BellGothicBlack";
+  color: #fff;
+  text-transform: uppercase;
+}
+footer address {
+  margin-top: 10px;
+}
+footer address p#addr {
+  margin-bottom: 0px;
+  font-family: "ProximaNovaLight";
+  text-transform: uppercase;
+}
+footer address p#addr:before {
+  content: '';
+  width: 13px;
+  height: 22px;
+  background: url(../img/map.png) no-repeat center center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+footer address p#kazan {
+  font-size: 20px;
+  font-family: "ProximaNovaLight";
+  margin-top: 0;
+}
+footer p#phone_footer {
+  margin-bottom: 0px;
+  font-family: "ProximaNovaLight";
+  text-transform: uppercase;
+}
+footer p#phone_footer:before {
+  content: '';
+  width: 13px;
+  height: 18px;
+  background: url(../img/phone2.png) no-repeat center center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+footer .soshial {
+  margin-top: 20px;
+}
+footer .soshial img {
+  margin-right: 15px;
+}
+footer p#number {
+  font-size: 20px;
+  font-family: "ProximaNovaLight";
+  margin-top: 0;
+}
+footer button#get_answer {
+  margin-left: 10px;
+  background-color: transparent;
+  padding: 7px 35px;
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: "BellGothicBlack";
+  text-transform: uppercase;
+}
+footer button#get_answer:hover {
+  background-color: #fff;
+  color: #666;
+}
+footer .details_row {
+  margin-top: 30px;
+}
+footer .details h5 {
+  font-family: "DIN_Medium";
+  font-size: 20px;
+}
+footer .details p {
+  text-transform: uppercase;
+  font-family: "ProximaNovaLight";
+}
+footer .polisy {
+  text-align: center;
+}
+footer .polisy a {
+  color: #fff;
+  border-bottom: 1px dashed #fff;
+}
+footer .lytar {
+  text-align: right;
+}
+footer .lytar h4 {
+  font-family: "BellGothicBlack";
+  text-transform: uppercase;
+}
+footer .lytar a {
+  color: #fff;
+  font-family: "BellGothicBlack";
+  font-size: 18px;
+}
+/*============    ПОДВАЛ    ===========*/
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+.big_model {
+  width: 60%;
+}
+.modal-dialog {
+  margin-top: 10%;
+}
+.header_model h4 {
+  text-transform: uppercase;
+  color: #666;
+  font-family: "BellGothicBlack";
+  text-align: center;
+  font-size: 2rem;
+}
+.modal-header {
+  margin-top: -50px;
+  border-bottom: none;
+}
+.modal-header .close {
+  text-shodow: none;
+  color: #fff;
+  opacity: 0.9;
+  margin-right: -30px;
+}
+.modal-content {
+  border-radius: 0;
+}
+.modal-content input[name="name"] {
+  margin-top: 20px;
+  background: url(../img/1.png) no-repeat center left 5px;
+  padding: 25px;
+  padding-left: 30px;
+  border-radius: 0;
+  border: solid 1px #ccc;
+  font-family: "ProximaNovaLight";
+  opacity: 0.5;
+}
+.modal-content input[name="name"]:hover,
+.modal-content input[name="name"]:focus {
+  opacity: 1;
+}
+.modal-content input[name="phone"] {
+  margin-top: 15px;
+  background: url(../img/2.png) no-repeat center left 5px;
+  padding: 25px;
+  padding-left: 30px;
+  border-radius: 0;
+  border: solid 1px #ccc;
+  font-family: "ProximaNovaLight";
+  opacity: 0.5;
+}
+.modal-content input[name="phone"]:hover,
+.modal-content input[name="phone"]:focus {
+  opacity: 1;
+}
+.modal-content textarea[name="question"] {
+  margin-top: 15px;
+  padding: 25px;
+  padding-left: 20px;
+  border-radius: 0;
+  border: solid 1px #ccc;
+  font-family: "ProximaNovaLight";
+  opacity: 0.5;
+}
+.modal-content textarea[name="question"]:hover,
+.modal-content textarea[name="question"]:focus {
+  opacity: 1;
+}
+.modal-content button[type="submit"] {
+  margin-top: 15px;
+  background-color: #ff9933;
+  color: #fff;
+  border: 1px solid #ff9933;
+  padding: 14px 45px;
+  -moz-transition: all 0.1s 0.02s ease;
+  -o-transition: all 0.1s 0.02s ease;
+  -webkit-transition: all 0.1s 0.02s ease;
+}
+.modal-content button[type="submit"]:hover {
+  background-color: #fff;
+  color: #ff9933;
+}
+.modal-content p {
+  font-family: "ProximaNovaLight";
+  font-size: 18px;
+}
+.modal-content p span {
+  font-family: "BellGothicBlack";
+  color: #ff9933;
+  font-size: 22px;
+}
+.header_model_info h4 {
+  margin-left: 20px;
+  text-transform: uppercase;
+  color: #666;
+  font-family: "BellGothicBlack";
+  font-size: 2rem;
+}
+/*============    	АДАПТИВ    ===========*/
+.dropdown-toggle {
+  border: 1px solid #000;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: #666;
+}
+.dropdown-toggle:hover {
+  background-color: #666;
+  color: #fff;
+}
+.dropdown-toggle i {
+  margin-top: 10px;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  nav {
+    top: 0;
+    height: 50px;
+  }
+  .logo_img {
+    width: 60%;
+  }
+  .pull-right {
+    margin-left: -29px;
+    margin-right: -85px;
+    margin-top: -22px;
+  }
+  .nav_top {
+    margin-top: 15px;
+  }
+  section#main .main_header h1 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  section#main .main_header h1 span {
+    line-height: 1.7;
+    padding: 7px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+  .main_buttons button {
+    display: block;
+    margin: 0 auto;
+  }
+  .main_buttons button#measurer {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .main_buttons button#get_types {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
